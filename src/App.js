@@ -54,7 +54,7 @@ class App extends Component {
     this.setState({ imageURL: this.state.input })
       .then(response => {
         if (response) {
-          fetch('http://localhost:3002/image', {
+          fetch('https://facedects-backend.herokuapp.com/image', {
             method: 'put',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({

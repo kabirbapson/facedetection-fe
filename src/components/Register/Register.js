@@ -22,7 +22,7 @@ class Register extends React.Component {
     onSubmitSignIn = (e) => {
         e.preventDefault()
         // const response =  fetch('http://localhost:3002/signin', {
-        fetch('http://localhost:3002/register', {
+        fetch('https://facedects-backend.herokuapp.com/register', {
 
             method: 'post',
             headers: { 'Content-Type': 'application/json' },
